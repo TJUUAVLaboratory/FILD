@@ -4,8 +4,8 @@
 int main()
 {
 #if 0
-	Utils utilobj;	
-	
+	Utils utilobj;
+
 	const std::string config_file = "../resource/config.txt";
 
 	utilobj.ParseConfig(config_file);

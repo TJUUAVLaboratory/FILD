@@ -2,7 +2,11 @@
 #include "hnswlib.hpp"
 #include "extractor.hpp"
 #include "geometrical_verification.hpp"
-#include "theialib.hpp"
+// #include "theialib.hpp"
+#include <theia/theia.h>
+#include <theia/matching/cascade_hasher.h>
+
+using namespace theia;
 
 LCDEngine::LCDEngine()
 {

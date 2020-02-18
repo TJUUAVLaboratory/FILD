@@ -18,3 +18,27 @@ Theia Vision Library: http://theia-sfm.org/
 ## Related Publications
 If you find this work useful in your research, please cite:
 **Shan An**, Guangfu Che, Fangru Zhou, Xianglong Liu, Xin Ma, Yu Chen. Fast and Incremental Loop closure Detection using Proximity Graphs. The 2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2019) 
+
+
+## install and use
+
+**caffe 使用gcc5编译　FILD使用gcc4.9编译　！！！**
+
+### install caffe-augmentation
+
+```bash
+ ## install hdf5 
+ sudo apt-get install libhdf5-dev
+ ## in the Makefile.config
+ INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include /usr/include/hdf5/serial 
+ LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/hdf5/serial
+
+ ## install leveldb  lmdb
+ sudo apt-get install libleveldb-dev liblmdb-dev
+
+  ## in the file  include/caffe/common.hpp  common
+  // #ifndef GFLAGS_GFLAGS_H_
+   namespace gflags = google;
+  // #endif  // GFLAGS_GFLAGS_H_
+
+```
